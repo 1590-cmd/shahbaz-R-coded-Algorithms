@@ -1,7 +1,8 @@
 
 
 ################################################################################
-# CBRMDs-II 2differentsizes: Classes of Minimal Circular balance RMDs for period of three 
+# R-coded Algorithm Based on Cyclic Shifts (Rule II) to Generate Efficient Classes
+# of Circular Balanced Repeated Measurements Designs  for period of three 
 # sizes(P1, P2 and P3)
 ################################################################################
 
@@ -270,8 +271,8 @@ CGN2_3diffsize<-function(v,C,p,i,D=1){
     
     if(D==1 | D==2){
       cat("Following are required sets of shifts to obtain the 
-minimal CBRMDs for", "v=" ,object$R[1], ",","p1=",object$R[2],
-",","p2=",object$R[3],"and","p3=",object$R[4],"\n")
+Classes of Circular Balanced Repeated Measurements Designs for period of 
+three different sizes for","v=" ,object$R[1], ",","p1=",object$R[2],",","p2=",object$R[3],"and","p3=",object$R[4],"\n")
       row <- paste(rep("=", 52), collapse = "")
       cat(row, "\n")
       print(object$S[[1]])
@@ -284,8 +285,8 @@ minimal CBRMDs for", "v=" ,object$R[1], ",","p1=",object$R[2],
     
     if(D==3 | D==4){
       cat("Following are required sets of shifts to obtain the 
-minimal CBRMDs for", "v=" ,object$R[1], ",","p1=",object$R[2],
-",","p2=",object$R[3],"and","p3=",object$R[4],"\n")
+Classes of Circular Balanced Repeated Measurements Designs for period of 
+three differnt sizes for","v=" ,object$R[1], ",","p1=",object$R[2],",","p2=",object$R[3],"and","p3=",object$R[4],"\n")
       row <- paste(rep("=", 52), collapse = "")
       
       cat(row, "\n")
@@ -1039,7 +1040,7 @@ design<-function(H){
 
 
 # Example for case#1
-(H<-CGN2_3diffsize(p=c(3,4,5),v=11,i=2,C=8,D=4))
+(H<-CGN2_3diffsize(p=c(3,4,5),v=11,i=3,C=8,D=1))
 (design(H))
 
 (H<-CGN2_3diffsize(p=c(15,10,8),i=5,D=1))
