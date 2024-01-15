@@ -1,7 +1,8 @@
 
 ################################################################################
-# CBRMDs-II equalsize: Classes of Minimal Circular balance RMDs for period of equal 
-# size(P)
+# R-coded Algorithm Based on Cyclic Shifts (Rule II) to Generate Efficient 
+# Classes of Circular Balanced Repeated Measurements Designs  for period of 
+# equal size(P)
 ################################################################################
 
 # Algorithm from paper:
@@ -109,7 +110,8 @@ CGN2_equalsize<-function(v,p,i,C=1){
     cat(row, "\n")
     
     cat("Following are required sets of shifts to obtain the 
-minimal CBRMDs for", "v=" ,object[[3]][1], "and","p=",object[[3]][2], "\n")
+Classes of Circular Balanced Repeated Measurements Designs  for period of 
+equal size for", "v=" ,object[[3]][1], "and","p=",object[[3]][2], "\n")
     
     
     row <- paste(rep("=", 51), collapse = "")
@@ -345,7 +347,8 @@ design<-function(H){
 
 
 # example#1
-(H<-CGN2_equalsize(v=2,p=5,i=3,C=6))
+(H<-CGN2_equalsize(v=15,p=5,i=3,C=1))
+H$G
 (D<-design(H))
 
 
