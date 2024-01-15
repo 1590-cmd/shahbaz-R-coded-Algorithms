@@ -1,6 +1,7 @@
 
 ################################################################################
-# CBRMDs-II 2differentsizes: Classes of Minimal Circular balance RMDs for period of two 
+# R-coded Algorithm Based on Cyclic Shifts (Rule II) to Generate Efficient Classes
+# of Circular Balanced Repeated Measurements Designs  for period of two different
 # sizes(P1 and P2)
 ################################################################################
 
@@ -208,8 +209,9 @@ CGN2_2diffsize<-function(v,p,i,D=1,C=1){
     
     if(D==1){
       cat("Following are required sets of shifts to obtain the 
-          minimal CQRNDs2 for", "v=" ,object$R[1], ",","p1=",object$R[2],
-          "and","p2=",object$R[3],"\n")
+Classes of Circular Balanced Repeated Measurements Designs  for period of 
+two different sizes for", "v=" ,object$R[1], ",","p1=",object$R[2],
+  "and","p2=",object$R[3],"\n")
       row <- paste(rep("=", 51), collapse = "")
       cat(row, "\n")
       print(object$S[[1]])
@@ -219,8 +221,9 @@ CGN2_2diffsize<-function(v,p,i,D=1,C=1){
     
     if(D==2){
       cat("Following are required sets of shifts to obtain the 
-          minimal CQRNDs2 for", "v=" ,object$R[1], ",","p1=",object$R[2],
-          "and","p2=",object$R[3],"\n")
+Classes of Circular Balanced Repeated Measurements Designs  for period of 
+two different sizes for", "v=" ,object$R[1], ",","p1=",object$R[2],
+ "and","p2=",object$R[3],"\n")
       
       row <- paste(rep("=", 51), collapse = "")
       cat(row, "\n")
@@ -546,7 +549,7 @@ CGN2_2diffsize<-function(v,p,i,D=1,C=1){
       if(C==7)
       {
         v=i*p[1]+2*p[2]; m=(v-2)
-        A<-c(0,1:((v-2)/2),((v+2)/2),((v+4)/2):m)
+        A<-c(0,1:((v-1)/2),((v+3)/2),((v+5)/2):m)
         A1<-grouping2(A,p,v=(v-1),i)
         A2<-c(v,p);names(A2)<-c("V","p1","p2")
         x<-list(S=A1$B1,G=A1$B2,R=A2,A=A)
@@ -554,7 +557,7 @@ CGN2_2diffsize<-function(v,p,i,D=1,C=1){
       if(C==8)
       {
         v=i*p[1]+2*p[2]+1; m=(v-2)
-        A<-c(0,1:((v-2)/2),((v+4)/2),((v+6)/2):m)
+        A<-c(0,1:((v-3)/2),((v+3)/2),((v+5)/2):m)
         A1<-grouping2(A,p,v=(v-1),i)
         A2<-c(v,p);names(A2)<-c("V","p1","p2")
         x<-list(S=A1$B1,G=A1$B2,R=A2,A=A)
@@ -562,7 +565,7 @@ CGN2_2diffsize<-function(v,p,i,D=1,C=1){
       if(C==9)
       {
         v=i*p[1]+2*p[2]-2; m=(v-2)
-        A<-c(0,1:m,(v/2))
+        A<-c(0,1:m,((v+1)/2))
         A1<-grouping2(A,p,v=(v-1),i)
         A2<-c(v,p);names(A2)<-c("V","p1","p2")
         x<-list(S=A1$B1,G=A1$B2,R=A2,A=A)
@@ -570,7 +573,7 @@ CGN2_2diffsize<-function(v,p,i,D=1,C=1){
       if(C==10)
       {
         v=i*p[1]+2*p[2]-3; m=(v-2)
-        A<-c(0,1:m,(v/2),((v+2)/2))
+        A<-c(0,1:m,((v-1)/2),((v+1)/2))
         A1<-grouping2(A,p,v=(v-1),i)
         A2<-c(v,p);names(A2)<-c("V","p1","p2")
         x<-list(S=A1$B1,G=A1$B2,R=A2,A=A)
@@ -645,12 +648,13 @@ design<-function(H){
 ###############################################################################
 
 # Example#1
-(H<-CGN2_2diffsize(p=c(7,5),v=11,i=4,C=7,D=2))
-(design(H))
+(H<-CGN2_2diffsize(p=c(9,5),v=50,i=5,C=1,D=1))
 H$G
+(design(H))
+
 
 # Example#2
-(H<-CGN2_2diffsize(p=c(9,7),i=1,D=2)) 
+(H<-CGN2_2diffsize(p=c(9,7), v=11, i=1,D=2)) 
 (design(H))
 
 # Example#3
