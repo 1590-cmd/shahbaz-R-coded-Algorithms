@@ -245,10 +245,10 @@ delmin<-function(z){
 # sizes.
 ################################################################################
 
-# D=1: period of three different sizes with one set of p2
-# D=2: period of three different sizes with two set of p2
-# D=3: period of three different sizes with one set of p2 and one set of p3
-# D=4: period of three different sizes with two set of p2 and one set of p3
+# D=1: period of three different sizes with one set of k2
+# D=2: period of three different sizes with two set of k2
+# D=3: period of three different sizes with one set of k2 and one set of k3
+# D=4: period of three different sizes with two set of k2 and one set of k3
 
 #   k: Vector of three different block sizes 
 #   i: Number of sets of shifts for k1
