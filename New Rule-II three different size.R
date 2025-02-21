@@ -635,7 +635,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
     if(v%%2==0){
       if(C==1)
       {
-        v=i*k[1]+2*k[2]+k[3]; m=(v-2)
+        v=i*k[1]+k[2]+2*k[3]; m=(v-2)
         A=c(1,2:m)
         A1<-grouping3(A,k,v=(v-1),i,sk2=1,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -643,7 +643,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==2)
       {
-        v=i*k[1]+2*k[2]+k[3]+1; m=(v-2)
+        v=i*k[1]+k[2]+2*k[3]+1; m=(v-2)
         A<-c(1:((v-2)/2),((v+2)/2),((v+4)/2):m)
         A1<-grouping3(A,k,v=(v-1),i,sk2=1,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -651,7 +651,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==3)
       {
-        v=i*k[1]+2*k[2]+k[3]+2; m=(v-2)
+        v=i*k[1]+k[2]+2*k[3]+2; m=(v-2)
         A<-c(1:((v-2)/2),((v+4)/2),((v+6)/2):m)
         A1<-grouping3(A,k,v=(v-1),i,sk2=1,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -659,7 +659,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==4)
       {
-        v=i*k[1]+2*k[2]+k[3]-1; m=(v-2)
+        v=i*k[1]+k[2]+2*k[3]-1; m=(v-2)
         A<-c(1:m,(v/2))
         A1<-grouping3(A,k,v=(v-1),i,sk2=1,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -667,7 +667,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==5)
       {
-        v=i*k[1]+2*k[2]+k[3]-2; m=(v-2)
+        v=i*k[1]+k[2]+2*k[3]-2; m=(v-2)
         A<-c(1:m,(v/2),((v+2)/2))
         A1<-grouping3(A,k,v=(v-1),i,sk2=1,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -675,7 +675,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==6)
       {
-        v=i*k[1]+2*k[2]+k[3]-1; m=(v-2)
+        v=i*k[1]+k[2]+2*k[3]-1; m=(v-2)
         A=c(0,1,2:m)
         A1<-grouping3(A,k,v=(v-1),i,sk2=1,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -683,7 +683,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==7)
       {
-        v=i*k[1]+2*k[2]+k[3]; m=(v-2)
+        v=i*k[1]+k[2]+2*k[3]; m=(v-2)
         A<-c(0,1:((v-2)/2),((v+2)/2),((v+4)/2):m)
         A1<-grouping3(A,k,v=(v-1),i,sk2=1,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -691,7 +691,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==8)
       {
-        v=i*k[1]+2*k[2]+k[3]+1; m=(v-2)
+        v=i*k[1]+k[2]+2*k[3]+1; m=(v-2)
         A<-c(0,1:((v-2)/2),((v+4)/2),((v+6)/2):m)
         A1<-grouping3(A,k,v=(v-1),i,sk2=1,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -699,7 +699,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==9)
       {
-        v=i*k[1]+2*k[2]+k[3]-2; m=(v-2)
+        v=i*k[1]+k[2]+2*k[3]-2; m=(v-2)
         A<-c(0,1:m,(v/2))
         A1<-grouping3(A,k,v=(v-1),i,sk2=1,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -707,7 +707,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==10)
       {
-        v=i*k[1]+2*k[2]+k[3]-3; m=(v-2)
+        v=i*k[1]+k[2]+2*k[3]-3; m=(v-2)
         A<-c(0,1:m,(v/2),((v+2)/2))
         A1<-grouping3(A,k,v=(v-1),i,sk2=1,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -717,7 +717,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
     if(v%%2!=0){
       if(C==1)
       {
-        v=i*k[1]+2*k[2]+k[3]; m=(v-2)
+        v=i*k[1]+k[2]+2*k[3]; m=(v-2)
         A=c(1,2:m)
         A1<-grouping3(A,k,v=(v-1),i,sk2=1,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -725,7 +725,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==2)
       {
-        v=i*k[1]+2*k[2]+k[3]+1; m=(v-2)
+        v=i*k[1]+k[2]+2*k[3]+1; m=(v-2)
         A<-c(1:((v-1)/2),((v+3)/2),((v+5)/2):m)
         A1<-grouping3(A,k,v=(v-1),i,sk2=1,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -733,7 +733,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==3)
       {
-        v=i*k[1]+2*k[2]+k[3]+2; m=(v-2)
+        v=i*k[1]+k[2]+2*k[3]+2; m=(v-2)
         A<-c(1:((v-3)/2),((v+3)/2),((v+5)/2):m)
         A1<-grouping3(A,k,v=(v-1),i,sk2=1,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -741,7 +741,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==4)
       {
-        v=i*k[1]+2*k[2]+k[3]-1; m=(v-2)
+        v=i*k[1]+k[2]+2*k[3]-1; m=(v-2)
         A<-c(1:m,((v+1)/2))
         A1<-grouping3(A,k,v=(v-1),i,sk2=1,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -749,7 +749,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==5)
       {
-        v=i*k[1]+2*k[2]+k[3]-2; m=(v-2)
+        v=i*k[1]+k[2]+2*k[3]-2; m=(v-2)
         A<-c(1:m,((v-1)/2),((v+1)/2))
         A1<-grouping3(A,k,v=(v-1),i,sk2=1,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -757,7 +757,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==6)
       {
-        v=i*k[1]+2*k[2]+k[3]-1; m=(v-2)
+        v=i*k[1]+k[2]+2*k[3]-1; m=(v-2)
         A=c(0,1,2:m)
         A1<-grouping3(A,k,v=(v-1),i,sk2=1,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -765,7 +765,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==7)
       {
-        v=i*k[1]+2*k[2]+k[3]; m=(v-2)
+        v=i*k[1]+k[2]+2*k[3]; m=(v-2)
         A<-c(0,1:((v-1)/2),((v+3)/2),((v+5)/2):m)
         A1<-grouping3(A,k,v=(v-1),i,sk2=1,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -773,7 +773,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==8)
       {
-        v=i*k[1]+2*k[2]+k[3]+1; m=(v-2)
+        v=i*k[1]+k[2]+2*k[3]+1; m=(v-2)
         A<-c(0,1:((v-3)/2),((v+3)/2),((v+5)/2):m)
         A1<-grouping3(A,k,v=(v-1),i,sk2=1,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -781,7 +781,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==9)
       {
-        v=i*k[1]+2*k[2]+k[3]-2; m=(v-2)
+        v=i*k[1]+k[2]+2*k[3]-2; m=(v-2)
         A<-c(0,1:m,((v+1)/2))
         A1<-grouping3(A,k,v=(v-1),i,sk2=1,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -789,7 +789,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==10)
       {
-        v=i*k[1]+2*k[2]+k[3]-3; m=(v-2)
+        v=i*k[1]+k[2]+2*k[3]-3; m=(v-2)
         A<-c(0,1:m,((v-1)/2),((v+1)/2))
         A1<-grouping3(A,k,v=(v-1),i,sk2=1,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -802,7 +802,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
     if(v%%2==0){
       if(C==1)
       {
-        v=i*k[1]+2*k[2]+k[3]; m=(v-2)
+        v=i*k[1]+2*k[2]+2*k[3]; m=(v-2)
         A=c(1,2:m)
         A1<-grouping3(A,k,v=(v-1),i,sk2=2,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -810,7 +810,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==2)
       {
-        v=i*k[1]+2*k[2]+k[3]+1; m=(v-2)
+        v=i*k[1]+2*k[2]+2*k[3]+1; m=(v-2)
         A<-c(1:((v-2)/2),((v+2)/2),((v+4)/2):m)
         A1<-grouping3(A,k,v=(v-1),i,sk2=2,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -818,7 +818,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==3)
       {
-        v=i*k[1]+2*k[2]+k[3]+2; m=(v-2)
+        v=i*k[1]+2*k[2]+2*k[3]+2; m=(v-2)
         A<-c(1:((v-2)/2),((v+4)/2),((v+6)/2):m)
         A1<-grouping3(A,k,v=(v-1),i,sk2=2,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -826,7 +826,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==4)
       {
-        v=i*k[1]+2*k[2]+k[3]-1; m=(v-2)
+        v=i*k[1]+2*k[2]+2*k[3]-1; m=(v-2)
         A<-c(1:m,(v/2))
         A1<-grouping3(A,k,v=(v-1),i,sk2=2,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -834,7 +834,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==5)
       {
-        v=i*k[1]+2*k[2]+k[3]-2; m=(v-2)
+        v=i*k[1]+2*k[2]+2*k[3]-2; m=(v-2)
         A<-c(1:m,(v/2),((v+2)/2))
         A1<-grouping3(A,k,v=(v-1),i,sk2=2,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -842,7 +842,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==6)
       {
-        v=i*k[1]+2*k[2]+k[3]-1; m=(v-2)
+        v=i*k[1]+2*k[2]+2*k[3]-1; m=(v-2)
         A=c(0,1,2:m)
         A1<-grouping3(A,k,v=(v-1),i,sk2=2,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -850,7 +850,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==7)
       {
-        v=i*k[1]+2*k[2]+k[3]; m=(v-2)
+        v=i*k[1]+2*k[2]+2*k[3]; m=(v-2)
         A<-c(0,1:((v-2)/2),((v+2)/2),((v+4)/2):m)
         A1<-grouping3(A,k,v=(v-1),i,sk2=2,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -858,7 +858,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==8)
       {
-        v=i*k[1]+2*k[2]+k[3]+1; m=(v-2)
+        v=i*k[1]+2*k[2]+2*k[3]+1; m=(v-2)
         A<-c(0,1:((v-2)/2),((v+4)/2),((v+6)/2):m)
         A1<-grouping3(A,k,v=(v-1),i,sk2=2,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -866,7 +866,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==9)
       {
-        v=i*k[1]+2*k[2]+k[3]-2; m=(v-2)
+        v=i*k[1]+2*k[2]+2*k[3]-2; m=(v-2)
         A<-c(0,1:m,(v/2))
         A1<-grouping3(A,k,v=(v-1),i,sk2=2,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -874,7 +874,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==10)
       {
-        v=i*k[1]+2*k[2]+k[3]-3; m=(v-2)
+        v=i*k[1]+2*k[2]+2*k[3]-3; m=(v-2)
         A<-c(0,1:m,(v/2),((v+2)/2))
         A1<-grouping3(A,k,v=(v-1),i,sk2=2,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -884,7 +884,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
     if(v%%2!=0){
       if(C==1)
       {
-        v=i*k[1]+2*k[2]+k[3]; m=(v-2)
+        v=i*k[1]+2*k[2]+2*k[3]; m=(v-2)
         A=c(1,2:m)
         A1<-grouping3(A,k,v=(v-1),i,sk2=2,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -892,7 +892,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==2)
       {
-        v=i*k[1]+2*k[2]+k[3]+1; m=(v-2)
+        v=i*k[1]+2*k[2]+2*k[3]+1; m=(v-2)
         A<-c(1:((v-1)/2),((v+3)/2),((v+5)/2):m)
         A1<-grouping3(A,k,v=(v-1),i,sk2=2,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -900,7 +900,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==3)
       {
-        v=i*k[1]+2*k[2]+k[3]+2; m=(v-2)
+        v=i*k[1]+2*k[2]+2*k[3]+2; m=(v-2)
         A<-c(1:((v-3)/2),((v+3)/2),((v+5)/2):m)
         A1<-grouping3(A,k,v=(v-1),i,sk2=2,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -908,7 +908,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==4)
       {
-        v=i*k[1]+2*k[2]+k[3]-1; m=(v-2)
+        v=i*k[1]+2*k[2]+2*k[3]-1; m=(v-2)
         A<-c(1:m,((v+1)/2))
         A1<-grouping3(A,k,v=(v-1),i,sk2=2,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -916,7 +916,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==5)
       {
-        v=i*k[1]+2*k[2]+k[3]-2; m=(v-2)
+        v=i*k[1]+2*k[2]+2*k[3]-2; m=(v-2)
         A<-c(1:m,((v-1)/2),((v+1)/2))
         A1<-grouping3(A,k,v=(v-1),i,sk2=2,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -924,7 +924,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==6)
       {
-        v=i*k[1]+2*k[2]+k[3]-1; m=(v-2)
+        v=i*k[1]+2*k[2]+2*k[3]-1; m=(v-2)
         A=c(0,1,2:m)
         A1<-grouping3(A,k,v=(v-1),i,sk2=2,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -932,7 +932,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==7)
       {
-        v=i*k[1]+2*k[2]+k[3]; m=(v-2)
+        v=i*k[1]+2*k[2]+2*k[3]; m=(v-2)
         A<-c(0,1:((v-1)/2),((v+3)/2),((v+5)/2):m)
         A1<-grouping3(A,k,v=(v-1),i,sk2=2,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -940,7 +940,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==8)
       {
-        v=i*k[1]+2*k[2]+k[3]+1; m=(v-2)
+        v=i*k[1]+2*k[2]+2*k[3]+1; m=(v-2)
         A<-c(0,1:((v-3)/2),((v+3)/2),((v+5)/2):m)
         A1<-grouping3(A,k,v=(v-1),i,sk2=2,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -948,7 +948,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==9)
       {
-        v=i*k[1]+2*k[2]+k[3]-2; m=(v-2)
+        v=i*k[1]+2*k[2]+2*k[3]-2; m=(v-2)
         A<-c(0,1:m,((v+1)/2))
         A1<-grouping3(A,k,v=(v-1),i,sk2=2,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -956,7 +956,7 @@ three differnt sizes for","v=" ,object$R[1], ",","k1=",object$R[2],",","k2=",obj
       }
       if(C==10)
       {
-        v=i*k[1]+2*k[2]+k[3]-3; m=(v-2)
+        v=i*k[1]+2*k[2]+2*k[3]-3; m=(v-2)
         A<-c(0,1:m,((v-1)/2),((v+1)/2))
         A1<-grouping3(A,k,v=(v-1),i,sk2=2,sk3=1)
         A2<-c(v,k);names(A2)<-c("V","k1","k2","k3")
@@ -1035,7 +1035,7 @@ design<-function(H){
 
 
 # Example for case#1
-(H<-CGN2_3diffsize(k=c(3,4,5),v=10,i=2,C=8,D=3))
+(H<-CGN2_3diffsize(k=c(3,4,5),v=10,i=2,C=7,D=4))
 (design(H))
 
 (H<-CGN2_3diffsize(k=c(15,10,8),i=5,D=1))
